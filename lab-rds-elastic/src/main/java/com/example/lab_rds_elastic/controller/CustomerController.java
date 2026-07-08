@@ -1,8 +1,7 @@
 package com.example.lab_rds_elastic.controller;
 
-import com.lab.rds.lab_rds.entity.Customer;
-import com.lab.rds.lab_rds.repository.CustomerRepository;
-import com.lab.rds.lab_rds.service.CustomerService;
+import com.example.lab_rds_elastic.entity.Customer;
+import com.example.lab_rds_elastic.service.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,8 @@
 package com.example.lab_rds_elastic.service;
 
-import com.lab.rds.lab_rds.entity.Customer;
-import com.lab.rds.lab_rds.repository.CustomerRepository;
+
+import com.example.lab_rds_elastic.entity.Customer;
+import com.example.lab_rds_elastic.repository.CustomerRepository;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
