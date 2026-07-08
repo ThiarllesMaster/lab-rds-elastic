@@ -1,6 +1,10 @@
 spring:
   application:
     name: lab-rds
+  cloud:
+    aws:
+      region:
+        static: eu-west-1
 
   config:
     import:
