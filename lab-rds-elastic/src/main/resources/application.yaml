@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: lab-rds
+
+  config:
+    import:
+      - aws-parameterstore:/lab-rds/
+      - aws-secretsmanager:lab-rds/database
+
+  datasource:
+    url: ${db.url}
+    username: ${db.user}
+    password: ${db.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: ${db.elastic_cache}
+      port: 6379
+      ssl:
+        enabled: true

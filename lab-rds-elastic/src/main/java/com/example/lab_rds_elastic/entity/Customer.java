@@ -1,0 +1,25 @@
+package com.example.lab_rds_elastic.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name = "customers")
+@AllArgsConstructor
+@Data
+public class Customer implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private String email;
+
+    public Customer() {
+
+    }
+}
